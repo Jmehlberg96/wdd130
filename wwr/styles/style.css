@@ -84,7 +84,6 @@ nav a:hover{
 #hero-img{
     width: 100%;
 }
-
 .button-box{
     text-align: center;
 }
@@ -108,7 +107,9 @@ main section img{
 
 #background{
     height: 725px;
-    background-color:#ccc5b9  ;
+    background-color:#ccc5b9;
+    grid-column: 1/11;
+    grid-row: 4/9;
 }
 
 .mountains{
@@ -148,10 +149,6 @@ h2{
     opacity: .6;
     transform: scale(1.1)
 }
-#background{
-    grid-column: 1/11;
-    grid-row: 4/9;
-}
 
 .book, .join{
     background-color:#eb5e28 ;
@@ -164,7 +161,7 @@ h2{
 
 }
 
-.book:hover, .join:hover{
+.book:hover, .join:hover, .gallery:hover{
     background-color:#fffcf2 ;
     color: #eb5e28;
 }
@@ -193,6 +190,141 @@ h2{
 .icon{
     width: 80px;
     padding-top: 10px;
+}
+/* page 2; Rivers page heading and hero pic*/
+#rivers {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: 0px;
+}
+#rivers-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#rivers-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 0px;
+}
+
+#rivers-msg h1, #rivers-msg h4{
+    text-align: center;
+    color: white;
+}
+#rivers-msg h4{
+    font-family: Raleway, Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+    margin-top: -30px;
+}
+
+#rivers-msg h1{
+    font-family: Fresca, Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+#rivers-img{
+    width: 100%;
+}
+/* main section of page 2*/
+.rivers-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    grid-row-gap: 0px;
+}
+.salmon-rivers-msg-box{
+  grid-column: 2/4;
+  grid-row: 1/2;
+  margin: 20px;
+    
+}
+.river-title{
+    text-align: center;
+    background-color: #6f7364;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fffcf2;
+    margin: 20px;
+    
+}
+.salmon-river-card{
+    grid-column: 1/2; 
+    grid-row: 1/2 ; 
+
+}
+.rivers-button-box{
+    text-align: center;
+    margin-top: 100px;
+}
+#background_salmon{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    background-color: #ccc5b9;
+    z-index: -1;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.gallery{
+    margin: 20px;
+    background-color:#eb5e28 ;
+    color: #fffcf2;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 42px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.river-card-img{
+    margin-top: 20px;
+    border: 10px solid #403d39;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+.river-card-img:hover {zoom: 150%;}
+
+.river-paragraph{
+    padding: 20px;
+}
+.desolation-canyon-msg{
+    grid-column: 1/3;
+    grid-row: 2/4;
+    margin: 20px;
+}
+.desolation-canyon-card{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+#background_gray{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-color: #ccc5b9;
+    z-index: -1;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.grand-canyon-msg{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    margin: 20px;
+
+}
+.grand-canyon-card{
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+}
+#background_grand{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-color: #ccc5b9;
+    z-index: -1;
+    margin-top:20px ;
+    margin-left: 20px;
+
 }
 /* #4 container grid with the footer including social media and links*/
 footer{
@@ -262,6 +394,8 @@ footer a:hover{
     footer {
         margin-top: 25px;
     }
+    
+   
 }
 
 
