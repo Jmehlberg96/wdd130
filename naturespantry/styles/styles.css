@@ -1,0 +1,160 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Raleway:wght@300&family=Sorts+Mill+Goudy:ital@0;1&family=Yuji+Syuku&display=swap');
+
+
+#content{
+    max-width: 1800px ;
+    margin: 0 auto;
+}
+body{
+    background-color: #a68a64ff ;
+    font-family: "Yuji Syuku", Lato, Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+
+}
+/* #1 container grid with Logo, and Navigation*/
+header{
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #414833ff ;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    color: #efdfbbff;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover{
+    background-color: #efdfbbff ;
+    color: #414833ff;
+}
+
+.logo{
+    width: 80px;
+}
+
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+/*#2 Container grid with image */
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: 0px;
+}
+#hero-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-img{
+    width: 100%;
+}
+
+.home-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 135px;
+}
+main section{
+    text-align: center;
+}
+#background {
+    background-color:#efdfbbff ;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin: 20px 0px 20px 0px;
+    border: 5px solid #7f4f24ff;
+    z-index: -1;
+}
+h1, h2, h3, h4 {
+    font-family: 'Sorts Mill Goudy', "Actor", 'Raleway';    
+}
+.msg{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    padding: 20px 50px 50px 50px;
+}
+    
+.herb-card, .uses-card, .more-card{
+    border: 5px solid #7f4f24ff;
+    background-color: #efdfbbff ;
+}
+.button-box #button{
+    border-radius: 5px;
+}
+.button-box #button:hover{
+    transform: scale(1.1);
+}
+.herb-card{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.uses-card{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.more-card{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.herb-card #herb, .uses-card #uses, .more-card #more{
+    border-bottom: 5px solid #7f4f24ff;    
+}
+.herb-card #herb:hover, .uses-card #uses:hover, .more-card #more:hover{
+    opacity: .6;
+}
+
+
+
+
+
+
+/* #4 container grid with the footer including social media and links*/
+footer{
+    background-color:#414833ff ;
+    padding: 25px 10px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+footer .social img{
+    padding-top: 15px;
+    width: 50px;
+    align-items: left
+    
+}
+
+footer h4{
+    color: #efdfbbff;
+    text-decoration: none;
+    font-family: "Yuji Syuku", Lato, Helvetica, sans-serif;
+    
+}
+
+footer a{
+    color: #efdfbbff;
+    text-decoration: underline;
+    font-family: "Yuji Syuku", Lato, Helvetica, sans-serif;   
+}
+footer a:hover{
+    color: #a4ac86ff ;
+    
+}

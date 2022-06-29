@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Natures's Pantry | Home</title>
 </head>
 <body>
@@ -23,10 +23,10 @@
     
         <div id="hero">
             <div id="hero-box">
-                <img id="hero-img" src="images/natures_pantry1000.png" alt="Natures Pantry Large">
+                <img id="hero-img" src="images/hero_image.png" alt="Natures Pantry Large">
             </div>
         </div>
-        <main>
+        <main class="home-grid">
             <div id="background"></div>
             <section class="msg">
                 <h2>Welcome To Nature's Pantry</h2>
@@ -44,7 +44,7 @@
                 </p>
                 <p>Plants have been used since the beginning of time to help the body grow strong and to heal 
                     the body when sick. In fact, it wasn’t until the late 1800’s that synthetic aspirin was 
-                    invented, up until then people used things like peppermint or willow tree bark to help with 
+                    invented. Up until then people used things like peppermint or willow tree bark to help with 
                     headaches and pain management. We are extremely grateful for modern medicine and all the 
                     amazing things that it can do, but we can’t discount the natural remedies and preventative 
                     ways to heal and strengthen our bodies that have worked for millennia. Our bodies were created 
@@ -53,22 +53,29 @@
                 </p>  
             </section>
             <section class="herb-card">
-                <img src="images/herbs.png" alt="herbs"><a href="herbs.html"></a>
-                <img src="images/sage_button.png" alt="herbs button"><a href="herbs.html">Herbs</a>
+                <a href="herbs.html"><img id="herb" src="images/herbs.png" alt="herbs"></a>
+                <div class="button-box">
+                    <a class='herbs' href="herbs.html"><img id="button" src="images/herbs_button.png" alt="herbs button"></a>
+                </div>
             </section>
             <section class="uses-card">
-                <img src="images/tincture.png" alt="tincture">
-                <img src="images/carmel_button.png" alt="uses button"><a href="herbuses.html">Uses</a>
+                <a href="uses.html"><img id="uses" src="images/tincture.png" alt="tincture"></a>
+                <div class="button-box">
+                    <a class='uses' href="uses.html"><img id="button" src="images/uses_button.png" alt="uses button"></a>
+                </div>
             </section>
             <section class="more-card">
-                <img src="images/meditation.png" alt="meditation"><a href="morehealing.html"></a>
-                <img src="images/cream_button.png" alt="more button"><a href="morehealing.html">More</a>
+                <a href="morehealing.html"><img id="more" src="images/meditation.png" alt="meditation"></a>
+                <div class="button-box">
+                    <a class='more' href="morehealing.html"><img id="button" src="images/more_button.png" alt="more button"></a>
+                </div>
             </section>
+            
         </main>
         <footer>
-            <h3>Nature's Pantry &copy; 2022-Jennifer Mehlberg</h3>
-            <h3><a href="https://jmehlberg96.github.io/wdd130/naturespantry/site-plan.html"></a>Site Plan</h3>
-            <h3><a href="contactus.html">Contact Us</a></h3>
+            <h4>Nature's Pantry &copy; 2022-Jennifer Mehlberg</h3>
+            <h4><a href="site-plan.html"></a>Site Plan</h3>
+            <h4><a href="contactus.html">Contact Us</a></h3>
             <div class="social">
                 <a href="https://facebook.com" target="_blank">
                     <img src="images/facebook.png" alt="fb icon">
