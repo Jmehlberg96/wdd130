@@ -118,7 +118,6 @@ h1, h2, h3, h4 {
     border: 5px solid #7f4f24ff;
     background-color: #efdfbbff;
     margin: 20px;
-    size: 300px;
 }
 .button-box #button{
     border-radius: 5px;
@@ -143,6 +142,9 @@ h1, h2, h3, h4 {
 }
 .herb-card #herb:hover, .uses-card #uses:hover, .more-card #more:hover{
     opacity: .6;
+}
+#herb, #uses, #more{
+    size: 300px;
 }
 
 /*Page 2- Herbs*/
