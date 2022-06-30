@@ -64,6 +64,29 @@ nav a:hover{
 
 #hero-img{
     width: 100%;
+    
+}
+#hero-msg-box{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color:#efdfbbff;
+    opacity: .6;
+    z-index: -1;  
+    border-radius: 200px; 
+}
+#hero-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    color:#7f4f24ff;
+    text-align: center; 
+    font-size: 45px;
+    background-color: none;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 3px;
 }
 
 .home-grid{
@@ -120,6 +143,118 @@ h1, h2, h3, h4 {
     opacity: .6;
 }
 
+/*Page 2- Herbs*/
+
+.herb-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.herb{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 40px;
+    text-align: left;
+    border: #656d4aff solid 5px;
+}
+.spice{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 40px;
+    text-align: left;
+    border: #656d4aff solid 5px;
+    
+}
+.herb-box h1, h3{
+    line-height: 5px;
+}
+#line{
+    line-height: 25px;
+}
+.background-top1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #efdfbbff;
+    z-index: -1;
+}
+.background-top2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: #efdfbbff;
+    z-index: -1;
+}
+/* main section*/
+.pg{
+    color: #efdfbbff;
+    padding: 20px 50px 20px 50px;
+}
+#img1{
+    border:#936639ff solid 10px;
+    border-radius: 50px;
+}
+#img2{
+    border:#414833ff solid 10px;
+    border-radius: 50px;
+}
+.herb-1, .herb-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.herb-msg-box1{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.herb-title-1{
+    text-align: center;
+    background-color: #efdfbbff;
+    font-size: larger;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.img-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 20px;
+}
+.background-1{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color:#656d4aff;
+    z-index: -1;
+}
+
+.herb-msg-box2{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.herb-title-2{
+    text-align: center;
+    background-color: #efdfbbff;
+    font-size: larger;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.img-2{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding: 20px;
+}
+.background-2{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color:#936639ff;
+    z-index: -1;
+}
 
 
 
