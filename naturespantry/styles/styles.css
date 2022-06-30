@@ -118,6 +118,7 @@ h1, h2, h3, h4 {
     border: 5px solid #7f4f24ff;
     background-color: #efdfbbff;
     margin: 20px;
+    size: 300px;
 }
 .button-box #button{
     border-radius: 5px;
