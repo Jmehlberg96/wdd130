@@ -141,7 +141,7 @@ h1, h2, h3, h4 {
     opacity: .6;
 }
 #herb, #uses, #more{
-    size: 300px;
+    width: 200px;
 }
 
 /*Page 2- Herbs*/
