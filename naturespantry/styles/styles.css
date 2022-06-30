@@ -137,9 +137,6 @@ h1, h2, h3, h4 {
     grid-column: 3/4;
     grid-row: 2/3;
 }
-.herb-card #herb, .uses-card #uses, .more-card #more{
-    border-bottom: 5px solid #7f4f24ff;    
-}
 .herb-card #herb:hover, .uses-card #uses:hover, .more-card #more:hover{
     opacity: .6;
 }
