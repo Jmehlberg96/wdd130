@@ -88,10 +88,14 @@ nav a:hover{
     letter-spacing: 3px;
 }
 
-.home-grid{
+/*.home-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 70px;
+}*/
+.home-grid{
+    display: flex;
+    justify-content: space-around;
 }
 main section{
     text-align: center;
@@ -122,12 +126,16 @@ h1, h2, h3, h4 {
 .background1{
     background-color: #efdfbbff;
     padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .button-box #more:hover,.button-box #herbs:hover, .button-box #uses:hover{
     transform: scale(1.1);
+    
 }
 #herbs, #uses, #more{
     border-radius: 5px;
+    padding-left: 225px;
 }
 .card #img-herbs:hover, .card #img-uses:hover, .card #img-more:hover{
     opacity: .6;
