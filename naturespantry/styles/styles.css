@@ -162,8 +162,7 @@ h1, h2, h3, h4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 100px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 20px 50px 20px 50px;
 }
 .herb{
     grid-column: 1/2;
