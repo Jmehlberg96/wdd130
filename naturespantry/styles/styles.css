@@ -92,7 +92,7 @@ nav a:hover{
 .home-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 75px;
+    column-gap: 70px;
 }
 main section{
     text-align: center;
@@ -115,8 +115,6 @@ h1, h2, h3, h4 {
 }
     
 .herb-card, .uses-card, .more-card{
-    border: 5px solid #7f4f24ff;
-    background-color: #efdfbbff;
     margin: 20px;
 }
 .button-box #button{
@@ -125,22 +123,43 @@ h1, h2, h3, h4 {
 .button-box #button:hover{
     transform: scale(1.1);
 }
+#card-background1{
+    background-color: #efdfbbff;
+    border: #7f4f24ff solid 5px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+#card-background2{
+    background-color: #efdfbbff;
+    border: #7f4f24ff solid 5px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: -1;
+}
+#card-background3{
+    background-color: #efdfbbff;
+    border: #7f4f24ff solid 5px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    z-index: -1;
+}
 .herb-card{
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 1/2;
 }
 .uses-card{
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 1/2;
 }
 .more-card{
     grid-column: 3/4;
-    grid-row: 2/3;
+    grid-row: 1/2;
 }
 .herb-card #herb:hover, .uses-card #uses:hover, .more-card #more:hover{
     opacity: .6;
 }
-#herb, #uses, #more{
+.herb-card #herb, .uses-card #uses, .more-card #more{
     width: 200px;
 }
 
