@@ -177,9 +177,9 @@ h1, h2, h3, h4 {
     display: flex;
     margin: 20px 50px 20px 50px;
     box-sizing: border-box;
- 
     text-align: justify;
 }
+
 .herb{
     grid-column: 1/2;
     grid-row: 1/2;
@@ -187,6 +187,7 @@ h1, h2, h3, h4 {
     text-align: left;
     border: #656d4aff solid 5px;
 }
+
 .spice{
     grid-column: 2/3;
     grid-row: 1/2;
@@ -272,12 +273,14 @@ h1, h2, h3, h4 {
 .img1{
     border:#936639ff solid 10px;
     border-radius: 50px;
-    margin: 30px 30px 30px 50px;
+    margin: 30px 20px 30px 130px;
+    width: 35%;
 }
 .img2{
     border:#936639ff solid 10px;
     border-radius: 50px;
-    margin: 50px 50px 50px 75px;
+    margin: 30px 20px 30px 15px;
+    width: 35%;
 }
 
 .title-1{
