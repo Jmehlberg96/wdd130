@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Natures's Pantry | More Healing</title>
+    <link rel="stylesheet" href="styles/styles1.css"> 
+    <title>Natures's Pantry | Herbs</title>
 </head>
 <body>
     <div id="content">
@@ -29,11 +29,11 @@
             <section id="hero-msg">
                 <h1>More Healing</h1>
             </section>
+
         </div>
 
         <main class="herbs-grid">
-
-            <section class="uses-box">
+            <section class="msg-box">
                 <div class="herb">
                     <h4>
                         Herbs to heal and strengthen your body are not alone in Nature's Pantry. There are many different ways that you can imporve 
@@ -46,14 +46,19 @@
                 </div>
                 <div class="background-top1"></div>
             </section>
-
-            <section class="box-2">
-                <div class="msg-box2">
-                    <div class="title-2">
+            <div class="herb-box">    
+                <div class="tab">
+                    <button class="tablinks" onclick="openHerb(event, 'Sleep')" id="defaultOpen">Sleep</button>
+                    <button class="tablinks" onclick="openHerb(event, 'Exercise')">Exercise</button>
+                    <button class="tablinks" onclick="openHerb(event, 'Meditation')">Meditation</button>
+                    <button class="tablinks" onclick="openHerb(event, 'Massage')">Massage</button>
+                </div>
+                <div id="Sleep" class="tabcontent">
+                    <section class="title-1">
                         <h3>Sleep:</h3>
-                    </div>
-                    <div>
-                        <p class="pg">
+                    </section>
+                    <div class="pg">
+                        <p>
                             It is a widely known rule that a person needs at least 8 hours of sleep a night for a healthy body, but have you ever asked
                             yourself why? Sleep is one of the key ingredients for balancing hormones, a healthy immune system, weight loss, sharp mind, healthy veins, strong heart, 
                             relieving stress, managing anxiety, and so much more. The lack of sleep is shown to increase the risk of diabetes, heart disease, and infections. 
@@ -61,23 +66,19 @@
                             There are many healthy alternatives to dealing with sleep disorders such as herbs in the form of teas, tinctures, and oils, exercise,
                             honey (it may sound crazy but it works), and vitamins like calcium magnesium. Remember the old saying, "Early to bed, early to rise, 
                             Makes a man healthy, wealthy, and wise."
- 
                         </p>
                     </div>
-                </div>
-                <div class="img-2">
-                    <img class='img2' src="images/sleep.png" alt="sleep"> 
-                </div>
-                <div class="background-2"></div>  
-            </section>
-
-            <section class="box-1">
-                <div class="msg-box1">
-                    <div class="title-1">
-                        <h3>Exercise:</h3>
-                    </div>
                     <div>
-                        <p class="pg">
+                        <img class="img1" src="images/sleep.png" alt="tincture"> 
+                        <img class="img1" src="images/eight_hours.png" alt="tincture2"> 
+                    </div>
+                </div>
+                <div id="Exercise" class="tabcontent">
+                    <section class="title-1">
+                        <h3>Exercise:</h3>
+                    </section>
+                    <div class="pg">
+                        <p>
                             Exercise is essential to your health and wellbeing. When you exercise it releases hormones into your body called 
                             endorphins, endocannabinoids, and dopamine that give you what some like to call a "runners high". It is that feeling 
                             of euphoria or pleasure that comes after a hard workout. Exercise has been clinically proven to not only strengthen 
@@ -90,20 +91,17 @@
                             Very important.
                         </p>
                     </div>
-                </div>
-                <div class="img-1">
-                    <img class="img1" src="images/exercise.png" alt="exercise"> 
-                </div>
-                <div class="background-1"></div>  
-            </section>
-
-            <section class="box-2">
-                <div class="msg-box2">
-                    <div class="title-2">
-                        <h3>Meditation:</h3>
-                    </div>
                     <div>
-                        <p class="pg">
+                        <img class='img1' src="images/exercise.png" alt="tea"> 
+                        <img class='img1' src="images/exercise_equip.png" alt="boneset"> 
+                    </div>
+                </div>
+                <div id="Meditation" class="tabcontent">
+                    <section class="title-1">
+                        <h3>Meditation:</h3>
+                    </section>
+                    <div class="pg">
+                        <p>
                             Meditation has been around for thousands of years. It is the practice of deep breathing and clearing your mind of 
                             feelings and emotions. When you meditate, you are training your brain to focus. You focus on your breathing, and 
                             listening to the air around you. To meditate you find a place where you are comfortable and feel safe. A place that 
@@ -115,20 +113,17 @@
                             stronger, healthier, YOU.
                         </p>
                     </div>
-                </div>
-                <div class="img-2">
-                    <img class='img2' src="images/meditation1.png" alt="meditation"> 
-                </div>
-                <div class="background-2"></div>  
-            </section>
-
-            <section class="box-1">
-                <div class="msg-box1">
-                    <div class="title-1">
-                        <h3>Massage:</h3>
-                    </div>
                     <div>
-                        <p class="pg">
+                        <img class='img1' src="images/meditation1.png" alt="herb-oil"> 
+                        <img class='img1' src="images/breathing.png" alt="lavender_oil"> 
+                    </div>
+                </div>
+                <div id="Massage" class="tabcontent">
+                    <section class="title-1">
+                        <h3>Massage:</h3>
+                    </section>
+                    <div class="pg">
+                        <p>
                             Massage therapy is another form of healing that has been around for thousands of years. It is the practice of soft tissue 
                             manipulation to reduce stress, improve circulation, aid in healing, boost energy, enhances immune systems, and speed up the 
                             body’s own natural healing process, improves mental health and lowers the body's stress levels. The list goes on and on. There 
@@ -139,12 +134,12 @@
                             to go get a massage! I do!
                         </p>
                     </div>
-                </div>
-                <div class="img-1">
-                    <img class='img1' src="images/massage.png" alt="massage"> 
-                </div>
-                <div class="background-1"></div>  
-            </section> 
+                    <div>
+                        <img class='img1' src="images/massage.png" alt="salve"> 
+                        <img class='img1' src="images/massage1.png" alt="dandelion"> 
+                    </div>
+                </div>     
+            </div>
         </main>
 
         <footer>
@@ -164,5 +159,23 @@
             </div>
         </footer>
     </div>
+    <script>
+        function openHerb(evt, herbName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(herbName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
 </body>
 </html>

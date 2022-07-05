@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Natures's Pantry | Uses</title>
+    <link rel="stylesheet" href="styles/styles1.css"> 
+    <title>Natures's Pantry | Herbs</title>
 </head>
 <body>
     <div id="content">
@@ -23,17 +23,17 @@
     
         <div id="hero">
             <div id="hero-box">
-                <img id="hero-img" src="images/hanging_herbs.png" alt="dried_herbs">
+                <img id="hero-img" src="images/hanging_herbs.png" alt="hanging_herbs">
             </div>
             <div id="hero-msg-box"></div>
             <section id="hero-msg">
-                <h1>How to Use Herbs</h1>
+                <h1>Herb Uses</h1>
             </section>
+
         </div>
 
         <main class="herbs-grid">
-
-            <section class="uses-box">
+            <section class="msg-box">
                 <div class="herb">
                     <h4>
                         There are many ways to take a plant and fix it so that it works for you. You can make it into a tincture, 
@@ -45,14 +45,21 @@
                 </div>
                 <div class="background-top1"></div>
             </section>
-
-            <section class="box-1">
-                <div class="msg-box1">
-                    <div class="title-1">
+            <div class="herb-box">    
+                <div class="tab">
+                    <button class="tablinks" onclick="openHerb(event, 'Tincture')" id="defaultOpen">Tincture</button>
+                    <button class="tablinks" onclick="openHerb(event, 'Infusions')">Infusions/Decoction</button>
+                    <button class="tablinks" onclick="openHerb(event, 'Oils')">Herbal Oil</button>
+                    <button class="tablinks" onclick="openHerb(event, 'Salves')">Salve</button>
+                    <button class="tablinks" onclick="openHerb(event, 'Pultice')">Pultice</button>
+                    <button class="tablinks" onclick="openHerb(event, 'Syrup')">Syrup</button>
+                </div>
+                <div id="Tincture" class="tabcontent">
+                    <section class="title-1">
                         <h3>Tincture:</h3>
-                    </div>
-                    <div>
-                        <p class="pg">
+                    </section>
+                    <div class="pg">
+                        <p>
                             There are three types of tinctures. Alcohol, vinegar, and glycerin. Each of these is called a menstrum. A menstrum 
                             is a liquid used to extract the properties of the plant into the liquid. With an alcohol menstrum, you can extract 
                             the most out of the plants. It has the longest shelf life and is absorbed quicker so that you can get the medicine 
@@ -62,36 +69,30 @@
                             a shelf life of 2 years. A glycerin based syrup keep for 3-6 weeks when refrigerated. Glycerin is sweet and so it makes 
                             a good base for kids’ medicine and is a great alternative for alcoholics.
                         </p>
-                        <p class="pg">
+                        <p>
                             To make a simple tincture involves just letting the dried herbs sit in a glass jar in the desired menstrum for 6 weeks 
                             and soak. Make sure that your herbs are fully dried and chopped into small pieces. Some recipes are slightly different 
                             and involve some cooking, but a simple tincture just needs a good soak. Shake it daily to mix up the herbs and after 
                             the soaking process, just strain and label. Keep it in a cool dark place.
                         </p>
-                        <p class="pg">
+                        <p>
                             One of my favorite tinctures to make is a super garlic tincture. It involves a little bit more than just soaking, and 
                             takes a bit of time, but is so worth the effort. It is an immune booster like no other. I have used it to fight the 
                             cold, flu, bronchitis, pneumonia, sinus infections and just to keep my immune system highly functioning. If you would 
                             like to see the step-by-step process, check it out <a class='link' href="https://smalltownbetties.com/super-garlic-tincture/">here.</a>
-
-
                         </p>
                     </div>
-                </div>
-                <div class="img-1">
-                    <img class="img1" src="images/tincture.png" alt="tincture"> 
-                    <img class="img1" src="images/tincture2.png" alt="tincture2"> 
-                </div>
-                <div class="background-1"></div> 
-            </section>
-
-            <section class="box-2">
-                <div class="msg-box2">
-                    <div class="title-2">
-                        <h3>Infusions/Decoctions:</h3>
-                    </div>
                     <div>
-                        <p class="pg">
+                        <img class="img1" src="images/tincture.png" alt="tincture"> 
+                        <img class="img1" src="images/tincture2.png" alt="tincture2"> 
+                    </div>
+                </div>
+                <div id="Infusions" class="tabcontent">
+                    <section class="title-1">
+                        <h3>Infusions/Decoctions:</h3>
+                    </section>
+                    <div class="pg">
+                        <p>
                             Infusions and decoctions are when you use hot water as your menstrum to extract the properties of the herb. You would 
                             infuse the more delicate parts of the plant, for instance the flower and leaves, and decoctions are done with the 
                             stronger parts of the plant such as the bark or root. Infusions are most common use of herbs. Most people know and 
@@ -106,20 +107,17 @@
                             herb!
                         </p>
                     </div>
-                </div>
-                <div class="img-2">
-                    <img class='img2' src="images/tea.png" alt="tea"> 
-                </div>
-                <div class="background-2"></div>  
-            </section>
-
-            <section class="box-1">
-                <div class="msg-box1">
-                    <div class="title-1">
-                        <h3>Herbal Oils:</h3>
-                    </div>
                     <div>
-                        <p class="pg">
+                        <img class='img1' src="images/tea.png" alt="tea"> 
+                        <img class='img1' src="images/herb_tea.png" alt="boneset"> 
+                    </div>
+                </div>
+                <div id="Oils" class="tabcontent">
+                    <section class="title-1">
+                        <h3>Herbal Oils:</h3>
+                    </section>
+                    <div class="pg">
+                        <p>
                             Herbal oils are not only amazing for salads and savory dinners, but they are also essential in healing our bodies. 
                             To make an herbal oil is just as simple as a tea or a simple tincture. Choose your favorite natural oil such as olive 
                             oil, extra virgin coconut oil, avocado oil, or any seed oil like grapeseed oil. Take your herb, dried and chopped fine, 
@@ -133,20 +131,17 @@
                             homemade salves, ointments, and balms as well.
                         </p>
                     </div>
-                </div>
-                <div class="img-1">
-                    <img class='img1' src="images/herb_oil.png" alt="herb-oil"> 
-                </div>
-                <div class="background-1"></div>  
-            </section>
-
-            <section class="box-2">
-                <div class="msg-box2">
-                    <div class="title-2">
-                        <h3>Salves:</h3>
-                    </div>
                     <div>
-                        <p class="pg ">
+                        <img class='img1' src="images/herb_oil.png" alt="herb-oil"> 
+                        <img class='img1' src="images/lavender_oil.png" alt="lavender_oil"> 
+                    </div>
+                </div>
+                <div id="Salves" class="tabcontent">
+                    <section class="title-1">
+                        <h3>Salves:</h3>
+                    </section>
+                    <div class="pg">
+                        <p>
                             Salves are what you would want to make to apply herbs to the skin. They are useful for burns, rashes, arthritis, eczema,
                             sore muscles, bites, and wounds such as shingles. Salves are easy to make. Just take a cup of your favorite herb oil and 
                             warm it with a ¼ cup of bees wax. Add some vitamin E oil to help with rancidity. A little essential oil will also work 
@@ -155,20 +150,17 @@
                             soft form but not hard. Be creative and come up with a blend that tickles your senses.
                         </p>
                     </div>
-                </div>
-                <div class="img-2">
-                    <img class='img2' src="images/salve.png" alt="salve"> 
-                </div>
-                <div class="background-2"></div>  
-            </section>
-
-            <section class="box-1">
-                <div class="msg-box1">
-                    <div class="title-1">
-                        <h3>Pultice:</h3>
-                    </div>
                     <div>
-                        <p class="pg">
+                        <img class='img1' src="images/salve.png" alt="salve"> 
+                        <img class='img1' src="images/bees_wax.png" alt="dandelion"> 
+                    </div>
+                </div>
+                <div id="Pultice" class="tabcontent">
+                    <section class="title-1">
+                        <h3>Pultice:</h3>
+                    </section>
+                    <div class="pg">
+                        <p>
                             A pultice is used in first aid when treatment is needed on the spot. Pultices can not be stored because they are made 
                             from fresh plants or rehydrated dried herbs. Pulitces are used in the treatment of stings, bites, wounds, chest congestion, 
                             or even achy joints. To make a pultice all you need to do is collect some fresh herbs and grind them up. Fresh herbs are 
@@ -181,20 +173,17 @@
                             reach the cells more quickly. Cold pultices are for the aid in reducing swelling and circulation.
                         </p>
                     </div>
-                </div>
-                <div class="img-1">
-                    <img class='img1' src="images/pultice.png" alt="pultice"> 
-                </div>
-                <div class="background-1"></div>  
-            </section>
-
-            <section class="box-2">
-                <div class="msg-box2">
-                    <div class="title-2">
-                        <h3>Syrups:</h3>
-                    </div>
                     <div>
-                        <p class="pg">
+                        <img class='img1' src="images/pultice.png" alt="pultice"> 
+                        <img class='img1' src="images/pultice1.png" alt="echinacea"> 
+                    </div>
+                </div>
+                <div id="Syrup" class="tabcontent">
+                    <section class="title-1">
+                        <h3>Syrups:</h3>
+                    </section>
+                    <div class="pg">
+                        <p>
                             A simple syrup is just that, simple. Syrups are used for giving medicine to kids and others who may have a harder time 
                             swallowing their medicine. You know the famous saying, "A spoonful of sugar helps the medicine go down." All you need to 
                             do to make a syrup is to choose the decoction of your choice and add honey. A sweet syrup is a 1:1 ratio and will store 
@@ -203,13 +192,12 @@
                             extend the shelf life of a syrup.
                         </p>
                     </div>
-                </div>
-                <div class="img-2">
-                    <img class='img2' src="images/elderflower_syrup.png" alt="elderflower_syrup"> 
-                </div>
-                <div class="background-2"></div>  
-            </section>
-
+                    <div>
+                        <img class='img1' src="images/elderflower_syrup.png" alt="elderflower_syrup"> 
+                        <img class='img1' src="images/syrup.png" alt="garlic"> 
+                    </div>
+                </div>    
+            </div>  
         </main>
 
         <footer>
@@ -229,5 +217,23 @@
             </div>
         </footer>
     </div>
+    <script>
+        function openHerb(evt, herbName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(herbName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
 </body>
 </html>
