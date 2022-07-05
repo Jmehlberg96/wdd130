@@ -157,12 +157,20 @@ h1, h2, h3, h4 {
 }
 
 /*Page 2- Herbs*/
-
-.herb-box{
+.def-box{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 100px;
     margin: 20px 50px 20px 50px;
+    text-align: justify;
+}
+
+.herb-box{
+    display: flex;
+    margin: 20px 50px 20px 50px;
+    box-sizing: border-box;
+ 
+    text-align: justify;
 }
 .herb{
     grid-column: 1/2;
@@ -197,6 +205,56 @@ h1, h2, h3, h4 {
     background-color: #efdfbbff;
     z-index: -1;
 }
+
+/* Style the tab */
+.tab {
+    float:left;
+    border-top: 5px solid #936639ff;
+    border-left: 5px solid #936639ff;
+    border-bottom: 5px solid #936639ff;
+    background-color: #7f4f24ff;
+    width: 20%;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: #efdfbbff;
+    padding: 30px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Sorts Mill Goudy', "Actor", 'Raleway';
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #414833ff;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #414833ff;
+  color: #efdfbbff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: right;
+    padding: 0px 12px;
+    border: 5px solid #936639ff;
+    width: 80%;
+    border-left: none;
+    background-color: #414833ff;
+}
+
 /* main section*/
 .pg{
     color: #efdfbbff;
@@ -205,42 +263,29 @@ h1, h2, h3, h4 {
 .img1{
     border:#936639ff solid 10px;
     border-radius: 50px;
-    margin-top: 30px;
+    margin: 50px 50px 50px 75px;
 }
 .img2{
-    border:#414833ff solid 10px;
+    border:#936639ff solid 10px;
     border-radius: 50px;
-    margin-top: 30px;
+    margin: 50px 50px 50px 75px;
 }
-.box-1, .box-2{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 20px 50px 20px 50px;
-}
-.msg-box1{
-    grid-column: 2/4;
-    grid-row: 1/2;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: justify;
-}
+
 .title-1{
     text-align: center;
     background-color: #efdfbbff;
     font-size: larger;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
     padding: 20px;
     border-radius: 20px;
 }
-.img-1{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    padding: 20px;
-}
+
 .background-1{
     grid-column: 1/4;
     grid-row: 1/2;
-    background-color:#656d4aff;
+    background-color: #7f4f24ff;
     z-index: -1;
 }
 
@@ -251,25 +296,7 @@ h1, h2, h3, h4 {
     padding-right: 50px;
     text-align: justify;
 }
-.title-2{
-    text-align: center;
-    background-color: #efdfbbff;
-    font-size: larger;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 20px;
-}
-.img-2{
-    grid-column: 3/4;
-    grid-row: 1/2;
-    padding: 20px;
-}
-.background-2{
-    grid-column: 1/4;
-    grid-row: 1/2;
-    background-color:#936639ff;
-    z-index: -1;
-}
+
 
 /* Page 3 Uses*/
 .uses-box{
@@ -402,3 +429,5 @@ footer a:hover{
     color: #a4ac86ff ;
     
 }
+
+
